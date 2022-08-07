@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<div class="table-div">
+    <h4 id="tab-name">My orders</h4>
+<table>
+    <tr>
+        <th>Booking <br>reference</th>
+        <th>Country</th>
+        <th>Hotel</th>
+        <th>Check-in date</th>
+        <th>Check-out date</th>
+        <th>Price</th>
+        <th>Tourists</th>
+        <th>Date of birth</th>
+        <th>Passport</th>
+    </tr>
+        {% for orders in orders %}
+        <tr>
+            <td>{{ orders["booking_ref"] }}</td>
+            <td>{{ orders["country"] }}</td>
+            <td>{{ orders["hotel"] }}</td>
+            <td>{{ orders["departure_date"] }}</td>
+            <td>{{ orders["arrival_date"] }}</td>
+            <td>{{ orders["price"] }}</td>
+            <td>{{ orders["tourist_surname"]}}{{ orders["tourist_name"] }}</td>
+            <td>{{ orders["birthday"] }}</td>
+            <td>{{ orders["passport"] }}</td>
+        </tr>
+        {% endfor %}
+</table>
+</div>
+
+<p id="travel-rules"><a href="https://tripadvisor.mfa.gov.ua/" target="_blank">Check travel rules</a></p>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Book</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Booking the offer</h4>
+      </div>
+      <div class="modal-body">
+        <form action="/booking" method="post">
+          <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="order_id" name="order_id" placeholder="Order Id" type="text" value="{{ order_id }}">
+          </div>
+          <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tourist_name" name="tourist_name" placeholder="Name" type="text">
+          </div>
+          <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tourist_surname" name="tourist_surname" placeholder="Surname" type="text">
+          </div>
+          <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tourist_birthday" name="tourist_birthday" placeholder="Date of birth" type="date">
+          </div>
+          <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="tourist_passort" name="tourist_passport" placeholder="Passport number" type="text">
+          </div>
+          By clicking "Book", I state that I have read and understood the terms and conditions
+          <button onclick="success()" class="btn btn-primary" type="submit">Book</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

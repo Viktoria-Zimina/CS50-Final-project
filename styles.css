@@ -1,0 +1,132 @@
+body
+{
+    background-image: url('/static/images/sea.jpg');
+
+ }
+ table
+ {
+    background-color: white;
+    opacity: 0.7;
+    width: 80%;
+    overflow-x:auto;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+th, td
+{
+    text-align: center;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer
+{
+    padding-top: 1%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+#travel-rules
+{
+    font-size: 24px;
+}
+
+.reg_form
+{
+    margin-top:5%;
+}
+.close
+{
+    position: absolute;
+    right:5%;
+}
+.btn-primary
+{
+    position: fixed;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-logout
+{
+    float: right;
+    top: 3%;
+    right: 3%;
+    background-color: transparent;
+    color: #6495ED;
+}
+
+.btn-login
+{
+    float: right;
+    top: 3%;
+    right: 3%;
+    background-color: transparent;
+    color: #6495ED;
+}
+.card
+{
+    width: 55rem;
+}
+.row
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    opacity: 0.8;
+}
+.card-title
+{
+    font-size: 20px;
+}
+.card-text
+{
+    font-size: 16px;
+
+}
+#tab-name
+{
+    text-align: center;
+    opacity: 0.8;
+
+}
+#travel-rules
+{
+    text-align: center;
+}
+.modal-title
+{
+    text-align: center;
+}
+
+.nav
+{
+    padding-top: 1%;
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+.table-div
+{
+    overflow-x:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.search_module
+ {
+    position: absolute;
+    top:25%;
+    left: 15%;
+ }
+ .fa
+ {
+   font-size: 24px;
+ }
